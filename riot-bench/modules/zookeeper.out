@@ -1,0 +1,364 @@
+2020-10-29 14:23:49,354 [myid:] - INFO  [main:QuorumPeerConfig@124] - Reading configuration from: /opt/zookeeper/bin/../conf/zoo.cfg
+2020-10-29 14:23:49,360 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2020-10-29 14:23:49,360 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2020-10-29 14:23:49,360 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2020-10-29 14:23:49,360 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2020-10-29 14:23:49,375 [myid:] - INFO  [main:QuorumPeerConfig@124] - Reading configuration from: /opt/zookeeper/bin/../conf/zoo.cfg
+2020-10-29 14:23:49,375 [myid:] - INFO  [main:ZooKeeperServerMain@96] - Starting server
+2020-10-29 14:23:49,392 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.9-1757313, built on 08/23/2016 06:50 GMT
+2020-10-29 14:23:49,392 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=ip-172-31-46-109.ec2.internal
+2020-10-29 14:23:49,392 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_272
+2020-10-29 14:23:49,392 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Private Build
+2020-10-29 14:23:49,392 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2020-10-29 14:23:49,392 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/opt/zookeeper/bin/../build/classes:/opt/zookeeper/bin/../build/lib/*.jar:/opt/zookeeper/bin/../lib/slf4j-log4j12-1.6.1.jar:/opt/zookeeper/bin/../lib/slf4j-api-1.6.1.jar:/opt/zookeeper/bin/../lib/netty-3.10.5.Final.jar:/opt/zookeeper/bin/../lib/log4j-1.2.16.jar:/opt/zookeeper/bin/../lib/jline-0.9.94.jar:/opt/zookeeper/bin/../zookeeper-3.4.9.jar:/opt/zookeeper/bin/../src/java/lib/*.jar:/opt/zookeeper/bin/../conf:
+2020-10-29 14:23:49,392 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+2020-10-29 14:23:49,393 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/tmp
+2020-10-29 14:23:49,393 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2020-10-29 14:23:49,394 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Linux
+2020-10-29 14:23:49,394 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=amd64
+2020-10-29 14:23:49,394 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=5.4.0-1028-aws
+2020-10-29 14:23:49,394 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=root
+2020-10-29 14:23:49,394 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/root
+2020-10-29 14:23:49,394 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/home/ubuntu/riot-bench/modules
+2020-10-29 14:23:49,402 [myid:] - INFO  [main:ZooKeeperServer@815] - tickTime set to 2500
+2020-10-29 14:23:49,402 [myid:] - INFO  [main:ZooKeeperServer@824] - minSessionTimeout set to -1
+2020-10-29 14:23:49,402 [myid:] - INFO  [main:ZooKeeperServer@833] - maxSessionTimeout set to -1
+2020-10-29 14:23:49,415 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:2181
+2020-10-29 14:24:10,000 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x175541209b7057f, timeout of 20000ms exceeded
+2020-10-29 14:24:10,000 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x175541209b70009, timeout of 20000ms exceeded
+2020-10-29 14:24:10,000 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x175541209b7057f
+2020-10-29 14:24:10,001 [myid:] - INFO  [SyncThread:0:FileTxnLog@203] - Creating new log file: log.38fb
+2020-10-29 14:24:10,001 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x175541209b70009
+2020-10-29 14:24:19,361 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33038
+2020-10-29 14:24:19,373 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33038
+2020-10-29 14:24:19,377 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60000 with negotiated timeout 20000 for client /127.0.0.1:33038
+2020-10-29 14:24:19,400 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60000
+2020-10-29 14:24:19,403 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:33038 which had sessionid 0x17574be4bc60000
+2020-10-29 14:24:19,407 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33040
+2020-10-29 14:24:19,408 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33040
+2020-10-29 14:24:19,410 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60001 with negotiated timeout 20000 for client /127.0.0.1:33040
+2020-10-29 14:24:19,410 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33042
+2020-10-29 14:24:19,411 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33042
+2020-10-29 14:24:19,417 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60002 with negotiated timeout 20000 for client /127.0.0.1:33042
+2020-10-29 14:24:19,457 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33044
+2020-10-29 14:24:19,458 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33044
+2020-10-29 14:24:19,461 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60003 with negotiated timeout 20000 for client /127.0.0.1:33044
+2020-10-29 14:24:19,478 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33046
+2020-10-29 14:24:19,479 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33046
+2020-10-29 14:24:19,481 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60004 with negotiated timeout 20000 for client /127.0.0.1:33046
+2020-10-29 14:24:19,520 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33048
+2020-10-29 14:24:19,520 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33048
+2020-10-29 14:24:19,522 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60005 with negotiated timeout 20000 for client /127.0.0.1:33048
+2020-10-29 14:24:19,524 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60005
+2020-10-29 14:24:19,526 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:33048 which had sessionid 0x17574be4bc60005
+2020-10-29 14:24:19,537 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33050
+2020-10-29 14:24:19,538 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33050
+2020-10-29 14:24:19,539 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60006 with negotiated timeout 20000 for client /127.0.0.1:33050
+2020-10-29 14:24:19,570 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33052
+2020-10-29 14:24:19,571 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33052
+2020-10-29 14:24:19,573 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60007 with negotiated timeout 20000 for client /127.0.0.1:33052
+2020-10-29 14:24:33,624 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33054
+2020-10-29 14:24:33,628 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33054
+2020-10-29 14:24:33,631 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60008 with negotiated timeout 20000 for client /127.0.0.1:33054
+2020-10-29 14:24:33,656 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60008
+2020-10-29 14:24:33,657 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:33054 which had sessionid 0x17574be4bc60008
+2020-10-29 14:24:33,664 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33056
+2020-10-29 14:24:33,664 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33056
+2020-10-29 14:24:33,666 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60009 with negotiated timeout 20000 for client /127.0.0.1:33056
+2020-10-29 14:24:35,957 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33070
+2020-10-29 14:24:35,961 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33070
+2020-10-29 14:24:35,962 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6000a with negotiated timeout 20000 for client /127.0.0.1:33070
+2020-10-29 14:24:35,982 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6000a
+2020-10-29 14:24:35,984 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:33070 which had sessionid 0x17574be4bc6000a
+2020-10-29 14:24:35,989 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33072
+2020-10-29 14:24:35,989 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33072
+2020-10-29 14:24:35,993 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6000b with negotiated timeout 20000 for client /127.0.0.1:33072
+2020-10-29 14:28:52,211 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc6000b, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 14:28:52,214 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:33072 which had sessionid 0x17574be4bc6000b
+2020-10-29 14:29:07,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc6000b, timeout of 20000ms exceeded
+2020-10-29 14:29:07,501 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6000b
+2020-10-29 14:29:13,873 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:35144
+2020-10-29 14:29:13,876 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:35144
+2020-10-29 14:29:13,878 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6000c with negotiated timeout 20000 for client /127.0.0.1:35144
+2020-10-29 14:29:13,897 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6000c
+2020-10-29 14:29:13,899 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:35144 which had sessionid 0x17574be4bc6000c
+2020-10-29 14:29:13,903 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:35146
+2020-10-29 14:29:13,903 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:35146
+2020-10-29 14:29:13,908 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6000d with negotiated timeout 20000 for client /127.0.0.1:35146
+2020-10-29 14:29:21,032 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x26 zxid:0x396b txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-16-1603440664 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-16-1603440664
+2020-10-29 14:29:21,054 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x33 zxid:0x396f txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-16-1603440664-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-16-1603440664-stormconf.ser
+2020-10-29 14:29:21,063 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x3b zxid:0x3973 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-16-1603440664-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-16-1603440664-stormcode.ser
+2020-10-29 14:29:21,069 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x43 zxid:0x3977 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-16-1603440664-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-16-1603440664-stormjar.jar
+2020-10-29 14:42:27,525 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc6000d, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-29 14:42:27,527 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:35146 which had sessionid 0x17574be4bc6000d
+2020-10-29 14:42:32,095 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x3b zxid:0x3a29 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-1-1603981744 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-1-1603981744
+2020-10-29 14:42:32,109 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x4b zxid:0x3a2d txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-1-1603981744-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-1-1603981744-stormconf.ser
+2020-10-29 14:42:32,114 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x53 zxid:0x3a31 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-1-1603981744-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-1-1603981744-stormcode.ser
+2020-10-29 14:42:32,123 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x5b zxid:0x3a35 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-1-1603981744-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-1-1603981744-stormjar.jar
+2020-10-29 14:42:47,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc6000d, timeout of 20000ms exceeded
+2020-10-29 14:42:47,500 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6000d
+2020-10-29 14:45:05,169 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:42128
+2020-10-29 14:45:05,172 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:42128
+2020-10-29 14:45:05,174 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6000e with negotiated timeout 20000 for client /127.0.0.1:42128
+2020-10-29 14:45:05,202 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6000e
+2020-10-29 14:45:05,204 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:42128 which had sessionid 0x17574be4bc6000e
+2020-10-29 14:45:05,207 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:42130
+2020-10-29 14:45:05,209 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:42130
+2020-10-29 14:45:05,211 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6000f with negotiated timeout 20000 for client /127.0.0.1:42130
+2020-10-30 13:35:59,053 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc6000f, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-30 13:35:59,055 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:42130 which had sessionid 0x17574be4bc6000f
+2020-10-30 13:36:17,501 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc6000f, timeout of 20000ms exceeded
+2020-10-30 13:36:17,501 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6000f
+2020-10-30 13:40:46,508 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x5e zxid:0x803f txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-2-1603982697 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-2-1603982697
+2020-10-30 13:40:46,516 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x78 zxid:0x8043 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-2-1603982697-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-2-1603982697-stormconf.ser
+2020-10-30 13:40:46,521 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x80 zxid:0x8047 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-2-1603982697-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-2-1603982697-stormcode.ser
+2020-10-30 13:40:46,527 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x88 zxid:0x804b txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-2-1603982697-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-2-1603982697-stormjar.jar
+2020-10-30 13:48:44,433 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39452
+2020-10-30 13:48:44,437 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39452
+2020-10-30 13:48:44,439 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60010 with negotiated timeout 20000 for client /127.0.0.1:39452
+2020-10-30 13:48:44,454 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39454
+2020-10-30 13:48:44,469 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60010
+2020-10-30 13:48:44,470 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39452 which had sessionid 0x17574be4bc60010
+2020-10-30 13:48:44,477 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39454
+2020-10-30 13:48:44,487 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60011 with negotiated timeout 20000 for client /127.0.0.1:39454
+2020-10-30 13:48:44,498 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39456
+2020-10-30 13:48:44,504 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39456
+2020-10-30 13:48:44,508 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60012 with negotiated timeout 20000 for client /127.0.0.1:39456
+2020-10-30 13:48:44,513 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60011
+2020-10-30 13:48:44,517 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39454 which had sessionid 0x17574be4bc60011
+2020-10-30 13:48:44,544 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39458
+2020-10-30 13:48:44,553 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39458
+2020-10-30 13:48:44,555 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39460
+2020-10-30 13:48:44,555 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39460
+2020-10-30 13:48:44,556 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60013 with negotiated timeout 20000 for client /127.0.0.1:39458
+2020-10-30 13:48:44,557 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60014 with negotiated timeout 20000 for client /127.0.0.1:39460
+2020-10-30 13:48:44,590 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60013
+2020-10-30 13:48:44,592 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39458 which had sessionid 0x17574be4bc60013
+2020-10-30 13:48:44,627 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39470
+2020-10-30 13:48:44,628 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39470
+2020-10-30 13:48:44,631 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60015 with negotiated timeout 20000 for client /127.0.0.1:39470
+2020-10-30 14:03:06,781 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60015, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-30 14:03:06,784 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39470 which had sessionid 0x17574be4bc60015
+2020-10-30 14:03:07,936 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60014
+2020-10-30 14:03:07,937 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39460 which had sessionid 0x17574be4bc60014
+2020-10-30 14:03:07,964 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60012
+2020-10-30 14:03:07,966 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39456 which had sessionid 0x17574be4bc60012
+2020-10-30 14:03:08,452 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x81 zxid:0x81b1 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/-local-3-1604065711 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/-local-3-1604065711
+2020-10-30 14:03:08,456 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x87 zxid:0x81b4 txntype:-1 reqpath:n/a Error Path:/storm/errors/-local-3-1604065711 Error:KeeperErrorCode = Directory not empty for /storm/errors/-local-3-1604065711
+2020-10-30 14:03:08,466 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0xa5 zxid:0x81bb txntype:-1 reqpath:n/a Error Path:/storm/blobstore/-local-3-1604065711-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/-local-3-1604065711-stormconf.ser
+2020-10-30 14:03:08,471 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0xad zxid:0x81bf txntype:-1 reqpath:n/a Error Path:/storm/blobstore/-local-3-1604065711-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/-local-3-1604065711-stormcode.ser
+2020-10-30 14:03:08,508 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0xb5 zxid:0x81c3 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/-local-3-1604065711-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/-local-3-1604065711-stormjar.jar
+2020-10-30 14:03:25,001 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60015, timeout of 20000ms exceeded
+2020-10-30 14:03:25,001 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60015
+2020-10-31 05:50:13,078 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:52600
+2020-10-31 05:50:13,081 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:52600
+2020-10-31 05:50:13,082 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60016 with negotiated timeout 20000 for client /127.0.0.1:52600
+2020-10-31 05:50:13,101 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60016
+2020-10-31 05:50:13,103 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:52600 which had sessionid 0x17574be4bc60016
+2020-10-31 05:50:13,107 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:52602
+2020-10-31 05:50:13,108 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:52602
+2020-10-31 05:50:13,110 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60017 with negotiated timeout 20000 for client /127.0.0.1:52602
+2020-10-31 06:10:37,836 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60017, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 06:10:37,837 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:52602 which had sessionid 0x17574be4bc60017
+2020-10-31 06:10:55,000 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60017, timeout of 20000ms exceeded
+2020-10-31 06:10:55,000 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60017
+2020-10-31 06:11:13,442 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33554
+2020-10-31 06:11:13,446 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33554
+2020-10-31 06:11:13,447 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60018 with negotiated timeout 20000 for client /127.0.0.1:33554
+2020-10-31 06:11:13,466 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60018
+2020-10-31 06:11:13,469 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:33554 which had sessionid 0x17574be4bc60018
+2020-10-31 06:11:13,471 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:33556
+2020-10-31 06:11:13,472 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:33556
+2020-10-31 06:11:13,474 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60019 with negotiated timeout 20000 for client /127.0.0.1:33556
+2020-10-31 06:11:30,617 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0xbe zxid:0xaf67 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-4-1604123407 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-4-1604123407
+2020-10-31 06:11:30,625 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0xe7 zxid:0xaf6b txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-4-1604123407-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-4-1604123407-stormconf.ser
+2020-10-31 06:11:30,630 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0xef zxid:0xaf6f txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-4-1604123407-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-4-1604123407-stormcode.ser
+2020-10-31 06:11:30,641 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0xf7 zxid:0xaf73 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-4-1604123407-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-4-1604123407-stormjar.jar
+2020-10-31 06:21:26,054 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60019, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 06:21:26,055 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:33556 which had sessionid 0x17574be4bc60019
+2020-10-31 06:21:31,139 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0xd3 zxid:0xaffc txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-5-1604124664 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-5-1604124664
+2020-10-31 06:21:31,146 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0xff zxid:0xb000 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-5-1604124664-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-5-1604124664-stormconf.ser
+2020-10-31 06:21:31,151 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x107 zxid:0xb004 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-5-1604124664-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-5-1604124664-stormcode.ser
+2020-10-31 06:21:31,161 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x10f zxid:0xb008 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-5-1604124664-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-5-1604124664-stormjar.jar
+2020-10-31 06:21:42,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60019, timeout of 20000ms exceeded
+2020-10-31 06:21:42,501 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60019
+2020-10-31 06:22:14,650 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:38288
+2020-10-31 06:22:14,653 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:38288
+2020-10-31 06:22:14,655 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6001a with negotiated timeout 20000 for client /127.0.0.1:38288
+2020-10-31 06:22:14,670 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6001a
+2020-10-31 06:22:14,672 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:38288 which had sessionid 0x17574be4bc6001a
+2020-10-31 06:22:14,675 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:38290
+2020-10-31 06:22:14,675 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:38290
+2020-10-31 06:22:14,681 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6001b with negotiated timeout 20000 for client /127.0.0.1:38290
+2020-10-31 06:27:27,175 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc6001b, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 06:27:27,175 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:38290 which had sessionid 0x17574be4bc6001b
+2020-10-31 06:27:31,460 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0xf6 zxid:0xb071 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-6-1604125324 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-6-1604125324
+2020-10-31 06:27:31,467 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x12c zxid:0xb075 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-6-1604125324-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-6-1604125324-stormconf.ser
+2020-10-31 06:27:31,471 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x134 zxid:0xb079 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-6-1604125324-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-6-1604125324-stormcode.ser
+2020-10-31 06:27:31,482 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x13c zxid:0xb07d txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-6-1604125324-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-6-1604125324-stormjar.jar
+2020-10-31 06:27:42,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc6001b, timeout of 20000ms exceeded
+2020-10-31 06:27:42,501 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6001b
+2020-10-31 06:38:54,846 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:43758
+2020-10-31 06:38:54,849 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:43758
+2020-10-31 06:38:54,851 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6001c with negotiated timeout 20000 for client /127.0.0.1:43758
+2020-10-31 06:38:54,867 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6001c
+2020-10-31 06:38:54,868 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:43758 which had sessionid 0x17574be4bc6001c
+2020-10-31 06:38:54,872 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:43760
+2020-10-31 06:38:54,873 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:43760
+2020-10-31 06:38:54,874 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6001d with negotiated timeout 20000 for client /127.0.0.1:43760
+2020-10-31 06:47:52,476 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc6001d, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 06:47:52,477 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:43760 which had sessionid 0x17574be4bc6001d
+2020-10-31 06:48:10,001 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc6001d, timeout of 20000ms exceeded
+2020-10-31 06:48:10,001 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6001d
+2020-10-31 06:48:36,089 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:47956
+2020-10-31 06:48:36,092 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:47956
+2020-10-31 06:48:36,093 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6001e with negotiated timeout 20000 for client /127.0.0.1:47956
+2020-10-31 06:48:36,111 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6001e
+2020-10-31 06:48:36,112 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:47956 which had sessionid 0x17574be4bc6001e
+2020-10-31 06:48:36,120 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:47958
+2020-10-31 06:48:36,120 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:47958
+2020-10-31 06:48:36,122 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc6001f with negotiated timeout 20000 for client /127.0.0.1:47958
+2020-10-31 06:51:32,625 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x127 zxid:0xb1d8 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-7-1604126324 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-7-1604126324
+2020-10-31 06:51:32,632 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x16e zxid:0xb1dc txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-7-1604126324-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-7-1604126324-stormconf.ser
+2020-10-31 06:51:32,637 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x176 zxid:0xb1e0 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-7-1604126324-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-7-1604126324-stormcode.ser
+2020-10-31 06:51:32,646 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x17e zxid:0xb1e4 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-7-1604126324-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-7-1604126324-stormjar.jar
+2020-10-31 06:54:42,634 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc6001f, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 06:54:42,634 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:47958 which had sessionid 0x17574be4bc6001f
+2020-10-31 06:54:42,804 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x13c zxid:0xb215 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-8-1604126907 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-8-1604126907
+2020-10-31 06:54:42,811 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x186 zxid:0xb219 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-8-1604126907-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-8-1604126907-stormconf.ser
+2020-10-31 06:54:42,829 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x18e zxid:0xb21d txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-8-1604126907-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-8-1604126907-stormcode.ser
+2020-10-31 06:54:42,840 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x196 zxid:0xb221 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-8-1604126907-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-8-1604126907-stormjar.jar
+2020-10-31 06:55:00,001 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc6001f, timeout of 20000ms exceeded
+2020-10-31 06:55:00,001 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc6001f
+2020-10-31 06:57:16,233 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:51448
+2020-10-31 06:57:16,236 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:51448
+2020-10-31 06:57:16,237 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60020 with negotiated timeout 20000 for client /127.0.0.1:51448
+2020-10-31 06:57:16,253 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60020
+2020-10-31 06:57:16,254 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:51448 which had sessionid 0x17574be4bc60020
+2020-10-31 06:57:16,259 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:51450
+2020-10-31 06:57:16,260 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:51450
+2020-10-31 06:57:16,261 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60021 with negotiated timeout 20000 for client /127.0.0.1:51450
+2020-10-31 07:01:22,781 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60021, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 07:01:22,782 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:51450 which had sessionid 0x17574be4bc60021
+2020-10-31 07:01:37,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60021, timeout of 20000ms exceeded
+2020-10-31 07:01:37,500 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60021
+2020-10-31 07:02:06,402 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53564
+2020-10-31 07:02:06,405 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:53564
+2020-10-31 07:02:06,408 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60022 with negotiated timeout 20000 for client /127.0.0.1:53564
+2020-10-31 07:02:07,426 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60022
+2020-10-31 07:02:07,429 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:53564 which had sessionid 0x17574be4bc60022
+2020-10-31 07:02:07,436 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53570
+2020-10-31 07:02:07,436 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:53570
+2020-10-31 07:02:07,437 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60023 with negotiated timeout 20000 for client /127.0.0.1:53570
+2020-10-31 07:02:13,213 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x16d zxid:0xb2b0 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-9-1604127429 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-9-1604127429
+2020-10-31 07:02:13,220 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x1c8 zxid:0xb2b4 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-9-1604127429-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-9-1604127429-stormconf.ser
+2020-10-31 07:02:13,232 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x1d0 zxid:0xb2b8 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-9-1604127429-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-9-1604127429-stormcode.ser
+2020-10-31 07:02:13,241 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x1d8 zxid:0xb2bc txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-9-1604127429-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-9-1604127429-stormjar.jar
+2020-10-31 07:06:40,913 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60023, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 07:06:40,913 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:53570 which had sessionid 0x17574be4bc60023
+2020-10-31 07:06:57,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60023, timeout of 20000ms exceeded
+2020-10-31 07:06:57,500 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60023
+2020-10-31 07:07:03,486 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x182 zxid:0xb302 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-10-1604127718 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-10-1604127718
+2020-10-31 07:07:03,492 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x1e0 zxid:0xb306 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-10-1604127718-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-10-1604127718-stormconf.ser
+2020-10-31 07:07:03,505 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x1e8 zxid:0xb30a txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-10-1604127718-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-10-1604127718-stormcode.ser
+2020-10-31 07:07:03,515 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x1f0 zxid:0xb30e txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-10-1604127718-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-10-1604127718-stormjar.jar
+2020-10-31 07:16:36,565 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:58450
+2020-10-31 07:16:36,568 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:58450
+2020-10-31 07:16:36,569 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60024 with negotiated timeout 20000 for client /127.0.0.1:58450
+2020-10-31 07:16:36,590 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60024
+2020-10-31 07:16:36,592 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:58450 which had sessionid 0x17574be4bc60024
+2020-10-31 07:16:36,596 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:58452
+2020-10-31 07:16:36,597 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:58452
+2020-10-31 07:16:36,598 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60025 with negotiated timeout 20000 for client /127.0.0.1:58452
+2020-10-31 07:28:34,222 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60025, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 07:28:34,223 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:58452 which had sessionid 0x17574be4bc60025
+2020-10-31 07:28:52,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60025, timeout of 20000ms exceeded
+2020-10-31 07:28:52,500 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60025
+2020-10-31 07:29:47,796 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:35812
+2020-10-31 07:29:47,799 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:35812
+2020-10-31 07:29:47,801 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60026 with negotiated timeout 20000 for client /127.0.0.1:35812
+2020-10-31 07:29:47,815 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60026
+2020-10-31 07:29:47,817 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:35812 which had sessionid 0x17574be4bc60026
+2020-10-31 07:29:47,820 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:35814
+2020-10-31 07:29:47,823 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:35814
+2020-10-31 07:29:47,824 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60027 with negotiated timeout 20000 for client /127.0.0.1:35814
+2020-10-31 07:31:34,703 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x1b3 zxid:0xb470 txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-11-1604128591 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-11-1604128591
+2020-10-31 07:31:34,712 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x222 zxid:0xb474 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-11-1604128591-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-11-1604128591-stormconf.ser
+2020-10-31 07:31:34,723 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x22a zxid:0xb478 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-11-1604128591-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-11-1604128591-stormcode.ser
+2020-10-31 07:31:34,735 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x232 zxid:0xb47c txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-11-1604128591-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-11-1604128591-stormjar.jar
+2020-10-31 07:36:57,391 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60027, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 07:36:57,392 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:35814 which had sessionid 0x17574be4bc60027
+2020-10-31 07:37:12,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60027, timeout of 20000ms exceeded
+2020-10-31 07:37:12,500 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60027
+2020-10-31 07:37:17,941 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39148
+2020-10-31 07:37:17,944 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39148
+2020-10-31 07:37:17,945 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60028 with negotiated timeout 20000 for client /127.0.0.1:39148
+2020-10-31 07:37:17,961 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60028
+2020-10-31 07:37:17,962 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39148 which had sessionid 0x17574be4bc60028
+2020-10-31 07:37:17,966 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:39150
+2020-10-31 07:37:17,966 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@928] - Client attempting to establish new session at /127.0.0.1:39150
+2020-10-31 07:37:17,967 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@673] - Established session 0x17574be4bc60029 with negotiated timeout 20000 for client /127.0.0.1:39150
+2020-10-31 07:41:35,271 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60001 type:delete cxid:0x1d6 zxid:0xb51a txntype:-1 reqpath:n/a Error Path:/storm/workerbeats/IdentityTopology-12-1604129382 Error:KeeperErrorCode = Directory not empty for /storm/workerbeats/IdentityTopology-12-1604129382
+2020-10-31 07:41:35,278 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x24f zxid:0xb51e txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-12-1604129382-stormconf.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-12-1604129382-stormconf.ser
+2020-10-31 07:41:35,283 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x257 zxid:0xb522 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-12-1604129382-stormcode.ser Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-12-1604129382-stormcode.ser
+2020-10-31 07:41:35,292 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@649] - Got user-level KeeperException when processing sessionid:0x17574be4bc60006 type:delete cxid:0x25f zxid:0xb526 txntype:-1 reqpath:n/a Error Path:/storm/blobstore/IdentityTopology-12-1604129382-stormjar.jar Error:KeeperErrorCode = Directory not empty for /storm/blobstore/IdentityTopology-12-1604129382-stormjar.jar
+2020-10-31 07:46:45,574 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@357] - caught end of stream exception
+EndOfStreamException: Unable to read additional data from client sessionid 0x17574be4bc60029, likely client has closed socket
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:228)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:203)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-31 07:46:45,575 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1008] - Closed socket connection for client /127.0.0.1:39150 which had sessionid 0x17574be4bc60029
+2020-10-31 07:47:02,500 [myid:] - INFO  [SessionTracker:ZooKeeperServer@358] - Expiring session 0x17574be4bc60029, timeout of 20000ms exceeded
+2020-10-31 07:47:02,500 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x17574be4bc60029
