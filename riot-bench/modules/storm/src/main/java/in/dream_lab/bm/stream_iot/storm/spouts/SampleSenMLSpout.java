@@ -20,6 +20,7 @@ import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
+
 public class SampleSenMLSpout extends BaseRichSpout implements ISyntheticEventGen {
 	SpoutOutputCollector _collector;
 	EventGen eventGen;
@@ -34,7 +35,7 @@ public class SampleSenMLSpout extends BaseRichSpout implements ISyntheticEventGe
 		//			this.csvFileName = "/home/ubuntu/sample100_sense.csv";
 		//			System.out.println("Inside  sample spout code");
 		//this.csvFileName = "/home/tarun/j2ee_workspace/eventGen-anshu/eventGen/bangalore.csv";
-	    this.csvFileName = "/home/ubuntu/riot-bench/modules/tasks/src/main/resources/SYS_sample_data_senml.csv";
+	    this.csvFileName = "/home/student1/streamingGc/riot-bench/modules/tasks/src/main/resources/SYS_sample_data_senml.csv";
 		this.scalingFactor = GlobalConstants.accFactor;
 		//			System.out.print("the output is as follows");
 	}

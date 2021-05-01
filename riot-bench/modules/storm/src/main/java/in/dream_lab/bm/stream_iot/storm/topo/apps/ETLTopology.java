@@ -27,10 +27,40 @@ import in.dream_lab.bm.stream_iot.storm.genevents.factory.ArgumentClass;
 import in.dream_lab.bm.stream_iot.storm.genevents.factory.ArgumentParser;
 import in.dream_lab.bm.stream_iot.storm.sinks.Sink;
 import in.dream_lab.bm.stream_iot.storm.spouts.SampleSenMLSpout;
-import in.dream_lab.bm.stream_iot.storm.spouts.SampleSenMLSpout;
+
+import static org.apache.storm.kafka.spout.FirstPollOffsetStrategy.EARLIEST;
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.storm.kafka.spout.KafkaSpoutRetryExponentialBackoff.TimeInterval;
+import org.apache.storm.kafka.spout.KafkaSpoutRetryService;
+import org.apache.storm.kafka.spout.KafkaSpoutConfig;
+import org.apache.storm.kafka.spout.KafkaSpoutRetryExponentialBackoff;
+import org.apache.storm.kafka.spout.KafkaSpout;
+//import org.apache.storm.kafka.SpoutConfig;
+//import org.apache.storm.kafka.ZkHosts;
+//import org.apache.storm.spout.SchemeAsMultiScheme;
 
 public class ETLTopology 
 {
+    public static KafkaSpoutConfig<String, String> getKafkaSpoutConfig(String bootstrapServers, String topicName) {
+	//ByTopicRecordTranslator<String, String> trans = new ByTopicRecordTranslator<>((r) -> new Values(r.topic(), r.partition(), r.offset(), r.key(), r.value()),new Fields("topic", "partition", "offset", "key", "value"), "KafkaTest");
+
+	//trans.forTopic(TOPIC_0,
+	//		       (r) -> new Values(r.topic(), r.partition(), r.offset(), r.key(), r.value()),
+	//		       new Fields("topic", "partition", "offset", "key", "value"), "SampleTopic");
+	return KafkaSpoutConfig.builder(bootstrapServers, new String[]{topicName})
+	    .setProp(ConsumerConfig.GROUP_ID_CONFIG, "kafkaSpoutTestGroup")
+	    .setRetry(getRetryService())
+	    //.setRecordTranslator(trans)
+	    .setOffsetCommitPeriodMs(10_000)
+	    .setFirstPollOffsetStrategy(EARLIEST)
+	    .setMaxUncommittedOffsets(250)
+	    .build();
+    }
+
+    public static KafkaSpoutRetryService getRetryService() {
+	return new KafkaSpoutRetryExponentialBackoff(TimeInterval.microSeconds(500),
+						     TimeInterval.milliSeconds(2), Integer.MAX_VALUE, TimeInterval.seconds(10));
+    }
 	 public static void main(String[] args) throws Exception
 	 {
 		 ArgumentClass argumentClass = ArgumentParser.parserCLI(args);
@@ -43,10 +73,38 @@ public class ETLTopology
 		 String spoutLogFileName = argumentClass.getOutputDirName() + "/spout-" + logFilePrefix;
 		 String taskPropFilename=argumentClass.getTasksPropertiesFilename();
 		 String spout1InputFilePath=argumentClass.getInputDatasetPathName();
-		 
+
+		 String TOPIC_0 = "sample0";
+		 String TOPIC_1 = "sample1";
+		 String TOPIC_2 = "sample2";
+		 String TOPIC_3 = "sample3";
 		 Config conf = new Config();
+
+		 //ZkHosts kafkaBrokerHosts = new ZkHosts("localhost:2181");
+		 //SpoutConfig kafkaConfig = new SpoutConfig(kafkaBrokerHosts, "sample", "","storm");
+		 /*		 String zkIp = "127.0.0.1";
+
+		 String nimbusHost = "127.0.0.1";
+
+		 String zookeeperHost = zkIp +":2181";
+
+		 ZkHosts zkHosts = new ZkHosts(zookeeperHost);
+
+		 SpoutConfig kafkaConfig = new SpoutConfig(zkHosts, "sample", "", "storm");
+
+		 KafkaSpout kafkaSpout = new KafkaSpout(kafkaConfig);
+		 */
 		 conf.setDebug(false);
-		 conf.setNumWorkers(15);
+		 conf.put("topology.backpressure.enable",false);
+		 conf.put("kafka.fetch.size.bytes", 12582912);
+		 conf.put("kafka.buffer.size.bytes", 12582912);
+		 
+		 //conf.put("topology.spout.max.batch.size",64*1024);
+		 //conf.put("topology.max.spout.pending", 2048);
+		 //conf.put("topology.executor.receive.buffer.size", 16384);
+		 //conf.put("topology.executor.send.buffer.size", 16384);
+		 
+		 conf.setNumWorkers(7);
 		 Properties p_=new Properties();
 		 InputStream input = new FileInputStream(taskPropFilename);
 		 p_.load(input);
@@ -58,7 +116,17 @@ public class ETLTopology
 
 	    
 	   
-//       String spout2InputFilePath=basePathForMultipleSpout+"SYS-inputcsv-predict-10spouts200mps-480sec-file2.csv";
+String spout2InputFilePath="/home/student1/streamingGc/riot-bench/modules/tasks/src/main/resources/TAXI_sample_data_senml2.csv";
+
+
+//builder.setSpout("kafka_spout0", new KafkaSpout<>(getKafkaSpoutConfig("localhost:9092",TOPIC_0)), 2);
+//builder.setSpout("kafka_spout1", new KafkaSpout<>(getKafkaSpoutConfig("localhost:9092",TOPIC_1)), 2);
+//builder.setSpout("kafka_spout2", new KafkaSpout<>(getKafkaSpoutConfig("localhost:9092",TOPIC_2)), 2);
+//builder.setSpout("kafka_spout3", new KafkaSpout<>(getKafkaSpoutConfig("localhost:9092",TOPIC_3)), 2);
+
+builder.setSpout("kafka_spout", new KafkaSpout<>(KafkaSpoutConfig.builder("127.0.0.1:9092", TOPIC_0).build()), 4);
+
+
 //       String spout3InputFilePath=basePathForMultipleSpout+"SYS-inputcsv-predict-10spouts200mps-480sec-file3.csv";
 //
 //       String spout4InputFilePath=basePathForMultipleSpout+"SYS-inputcsv-predict-10spouts200mps-480sec-file4.csv";
@@ -71,13 +139,19 @@ public class ETLTopology
 		
 
 
-        builder.setSpout("spout1", new SampleSenMLSpout(spout1InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
-               1);
-//       builder.setSpout("spout2", new SampleSenMLSpout(spout2InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
+//builder.setSpout("spout1", new SampleSenMLSpout(spout1InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
+//1);
+//builder.setSpout("kafka_spout", new SampleSenMLSpout(spout1InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
+//              1);
+
+//builder.setSpout("spout1", new KafkaSpout(kafkaConfig), 1);
+//builder.setSpout("spout1", kafkaSpout, 1);
+    
+//	 builder.setSpout("spout2", new SampleSenMLSpout(spout2InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
 //               1);
-//       builder.setSpout("spout3", new SampleSenMLSpout(spout3InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
+//       builder.setSpout("spout3", new SampleSenMLSpout(spout2InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
 //               1);
-//       builder.setSpout("spout4", new SampleSenMLSpout(spout4InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
+//       builder.setSpout("spout4", new SampleSenMLSpout(spout2InputFilePath, spoutLogFileName, 10),
 //               1);
 //       builder.setSpout("spout5", new SampleSenMLSpout(spout5InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
 //               1);
@@ -92,12 +166,12 @@ public class ETLTopology
 //       builder.setSpout("spout10", new SampleSenMLSpout(spout10InputFilePath, spoutLogFileName, argumentClass.getScalingFactor()),
 //               1);
 		 
-	   builder.setBolt("SenMlParseBolt",
-	                new SenMLParseBolt(p_), 1)
-	                .shuffleGrouping("spout1");
-////                 	.shuffleGrouping("spout2")
-//         			.shuffleGrouping("spout3")
-//         			.shuffleGrouping("spout4")
+	   builder.setBolt("SenMlParseBolt",new SenMLParseBolt(p_), 5)
+	       .shuffleGrouping("kafka_spout");
+	       //.shuffleGrouping("kafka_spout1")
+	       // .shuffleGrouping("kafka_spout2")
+	       //	       .shuffleGrouping("kafka_spout3");
+//builder.setBolt("SenMlParseBolt", new SenMLParseBolt(p_),1).shuffleGrouping("kafka_spout");
 //         			.shuffleGrouping("spout5")
 //         			.shuffleGrouping("spout6")
 //         			.shuffleGrouping("spout7")
@@ -107,23 +181,23 @@ public class ETLTopology
 
 
         builder.setBolt("RangeFilterBolt",
-	                new RangeFilterBolt(p_), 1)
+	                new RangeFilterBolt(p_), 5)
 	                .fieldsGrouping("SenMlParseBolt", new Fields("OBSTYPE"));
 
 		 builder.setBolt("BloomFilterBolt",
-	                new BloomFilterCheckBolt(p_), 1)
+	                new BloomFilterCheckBolt(p_), 5)
 	                .fieldsGrouping("RangeFilterBolt", new Fields("OBSTYPE"));
 		 
 		 builder.setBolt("InterpolationBolt",
-	                new InterpolationBolt(p_), 1)
+	                new InterpolationBolt(p_), 5)
 	                .fieldsGrouping("BloomFilterBolt", new Fields("OBSTYPE"));
 		 
 		 builder.setBolt("JoinBolt",
-	                new JoinBolt(p_), 1)
+	                new JoinBolt(p_), 5)
 	                .fieldsGrouping("InterpolationBolt", new Fields("MSGID"));
 		 
 		 builder.setBolt("AnnotationBolt",
-	                new AnnotationBolt(p_), 1)
+	                new AnnotationBolt(p_), 5)
 	                .shuffleGrouping("JoinBolt"); 
 
 //		 builder.setBolt("AzureInsert",
@@ -131,14 +205,14 @@ public class ETLTopology
 //	                .shuffleGrouping("AnnotationBolt");
 		 
 		 builder.setBolt("CsvToSenMLBolt",
-	                new CsvToSenMLBolt(p_), 1)
+	                new CsvToSenMLBolt(p_), 5)
 	                .shuffleGrouping("AnnotationBolt");
  
 		 //builder.setBolt("PublishBolt",
 	         //       new MQTTPublishBolt(p_), 1)
 	         //       .shuffleGrouping("CsvToSenMLBolt");
 
-		 builder.setBolt("sink", new Sink(sinkLogFileName), 1)
+		 builder.setBolt("sink", new Sink(sinkLogFileName), 5)
          			.shuffleGrouping("CsvToSenMLBolt");
 		 //.shuffleGrouping("PublishBolt");
 //		            .shuffleGrouping("AzureInsert");

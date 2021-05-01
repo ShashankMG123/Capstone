@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Random;
 
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;
@@ -32,14 +33,16 @@ public class SenMLParseBolt extends BaseRichBolt {
 		private Properties p;
 		private ArrayList<String> observableFields ;
 		private String [] metaFields ;
-		private String idField; 
+		private String idField;
+    
 	    public SenMLParseBolt(Properties p_){
 	         p=p_;
 	    }
 	    OutputCollector collector; 
 
 	    SenMLParse senMLParseTask ;
-
+    Random r;
+    long id;
     FileWriter writer;
 	    public static void initLogger(Logger l_) {     l = l_; }
 
@@ -48,7 +51,7 @@ public class SenMLParseBolt extends BaseRichBolt {
 		{
 			try 
 			{
-			    writer= new FileWriter("/home/ubuntu/outputs/senml1.csv",true);
+			    writer= new FileWriter("/home/student1/streamingGc/outputs/senml1.csv",true);
 			    
 			    
 				initLogger(LoggerFactory.getLogger("APP"));
@@ -56,6 +59,8 @@ public class SenMLParseBolt extends BaseRichBolt {
 				senMLParseTask.setup(l,p);
 				this.collector=outputCollector;
 				observableFields = new ArrayList();
+				r = new Random();
+				id= (long) (1*Math.pow(10,12)+(r.nextInt(1000)*Math.pow(10,9))+r.nextInt(10));
 				String line;
 				ArrayList<String> metaList = new ArrayList<String>();
 				
@@ -93,8 +98,12 @@ public class SenMLParseBolt extends BaseRichBolt {
 		{
 			try 
 			{
-				String msg = tuple.getStringByField("PAYLOAD");
-				String msgId = tuple.getStringByField("MSGID");
+			    //String msg = tuple.getStringByField("PAYLOAD");
+			    //	String msgId = tuple.getStringByField("MSGID");
+			    //		l.info(msg);
+			    String msg = tuple.getStringByField("value");
+			    l.info(msg);
+				String msgId = Long.toString(id++);
 				HashMap<String, String> map = new HashMap();
 		        map.put(AbstractTask.DEFAULT_KEY, msg);
 				senMLParseTask.doTask(map);
@@ -112,6 +121,7 @@ public class SenMLParseBolt extends BaseRichBolt {
 				{
 				    writer.write((String)(msgId+","+resultMap.get(idField)+","+meta.toString()+","+(String)observableFields.get(j)+","+(String) resultMap.get((String)observableFields.get(j))+"\n"));
 					collector.emit(new Values(msgId, resultMap.get(idField) ,meta.toString() , (String)observableFields.get(j) ,(String) resultMap.get((String)observableFields.get(j))));
+					collector.ack(tuple);
 					
  				}				
 			}

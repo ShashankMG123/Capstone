@@ -61,6 +61,9 @@ public class RangeFilterBolt extends BaseRichBolt {
     	
         Float res = rangeCheckTask.doTask(map);   	
     	String updatedValue = (res != 0) ? obsVal : "null";
+
+	l.info(msgId+" "+sensorId+" "+meta+" "+obsType+" "+updatedValue+"\n");
+	
     	collector.emit(new Values(msgId,sensorId ,meta,obsType ,updatedValue));
     }
 
