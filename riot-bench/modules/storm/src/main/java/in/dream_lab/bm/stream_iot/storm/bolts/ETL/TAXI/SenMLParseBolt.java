@@ -43,7 +43,7 @@ public class SenMLParseBolt extends BaseRichBolt {
 	    SenMLParse senMLParseTask ;
     Random r;
     long id;
-    FileWriter writer;
+    FileWriter writer, writer2;
 	    public static void initLogger(Logger l_) {     l = l_; }
 
 		@Override
@@ -51,8 +51,7 @@ public class SenMLParseBolt extends BaseRichBolt {
 		{
 			try 
 			{
-			    writer= new FileWriter("/home/student1/streamingGc/outputs/senml1.csv",true);
-			    
+				writer2= new FileWriter("/home/azureuser/streamingGc/outputs/timestamps.txt",true);
 			    
 				initLogger(LoggerFactory.getLogger("APP"));
 				senMLParseTask = new SenMLParse();
@@ -98,10 +97,10 @@ public class SenMLParseBolt extends BaseRichBolt {
 		{
 			try 
 			{
-			    //String msg = tuple.getStringByField("PAYLOAD");
-			    //	String msgId = tuple.getStringByField("MSGID");
-			    //		l.info(msg);
 			    String msg = tuple.getStringByField("value");
+				String msgCopy = msg;
+				writer2.write(msgCopy.split("----")[1] + "," + System.currentTimeMillis() +"\n");
+				msg = msg.split("----")[0];
 			    l.info(msg);
 				String msgId = Long.toString(id++);
 				HashMap<String, String> map = new HashMap();
@@ -119,7 +118,6 @@ public class SenMLParseBolt extends BaseRichBolt {
 				meta = meta.deleteCharAt(meta.lastIndexOf(","));
 				for(int j = 0; j < observableFields.size(); j++)
 				{
-				    writer.write((String)(msgId+","+resultMap.get(idField)+","+meta.toString()+","+(String)observableFields.get(j)+","+(String) resultMap.get((String)observableFields.get(j))+"\n"));
 					collector.emit(new Values(msgId, resultMap.get(idField) ,meta.toString() , (String)observableFields.get(j) ,(String) resultMap.get((String)observableFields.get(j))));
 					collector.ack(tuple);
 					

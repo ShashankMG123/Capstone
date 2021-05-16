@@ -124,7 +124,10 @@ String spout2InputFilePath="/home/student1/streamingGc/riot-bench/modules/tasks/
 //builder.setSpout("kafka_spout2", new KafkaSpout<>(getKafkaSpoutConfig("localhost:9092",TOPIC_2)), 2);
 //builder.setSpout("kafka_spout3", new KafkaSpout<>(getKafkaSpoutConfig("localhost:9092",TOPIC_3)), 2);
 
-builder.setSpout("kafka_spout", new KafkaSpout<>(KafkaSpoutConfig.builder("127.0.0.1:9092", TOPIC_0).build()), 4);
+builder.setSpout("kafka_spout0", new KafkaSpout<>(KafkaSpoutConfig.builder("127.0.0.1:9092", TOPIC_0).build()), 2);
+builder.setSpout("kafka_spout1", new KafkaSpout<>(KafkaSpoutConfig.builder("127.0.0.1:9092", TOPIC_1).build()), 2);
+builder.setSpout("kafka_spout2", new KafkaSpout<>(KafkaSpoutConfig.builder("127.0.0.1:9092", TOPIC_2).build()), 2);
+builder.setSpout("kafka_spout3", new KafkaSpout<>(KafkaSpoutConfig.builder("127.0.0.1:9092", TOPIC_3).build()), 2);
 
 
 //       String spout3InputFilePath=basePathForMultipleSpout+"SYS-inputcsv-predict-10spouts200mps-480sec-file3.csv";
@@ -167,10 +170,10 @@ builder.setSpout("kafka_spout", new KafkaSpout<>(KafkaSpoutConfig.builder("127.0
 //               1);
 		 
 	   builder.setBolt("SenMlParseBolt",new SenMLParseBolt(p_), 5)
-	       .shuffleGrouping("kafka_spout");
-	       //.shuffleGrouping("kafka_spout1")
-	       // .shuffleGrouping("kafka_spout2")
-	       //	       .shuffleGrouping("kafka_spout3");
+	       	.shuffleGrouping("kafka_spout0")
+	       	.shuffleGrouping("kafka_spout1")
+	    	.shuffleGrouping("kafka_spout2")
+			.shuffleGrouping("kafka_spout3");
 //builder.setBolt("SenMlParseBolt", new SenMLParseBolt(p_),1).shuffleGrouping("kafka_spout");
 //         			.shuffleGrouping("spout5")
 //         			.shuffleGrouping("spout6")

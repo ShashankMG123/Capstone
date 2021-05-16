@@ -1,9 +1,9 @@
-nimbusPid=$(head -n 1 /home/student1/streamingGc/scripts/pids/nimbusPid)
+nimbusPid=$(head -n 1 /home/azureuser/streamingGc/Capstone/scripts/pids/nimbusPid)
 kill $nimbusPid
 
-superPid=$(head -n 1 /home/student1/streamingGc/scripts/pids/superPid)
+superPid=$(head -n 1 /home/azureuser/streamingGc/Capstone/scripts/pids/superPid)
 kill $superPid
 
-uiPid=$(head -n 1 /home/student1/streamingGc/scripts/pids/uiPid)
+uiPid=$(head -n 1 /home/azureuser/streamingGc/Capstone/scripts/pids/uiPid)
 kill $uiPid
 

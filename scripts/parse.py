@@ -2,14 +2,14 @@ import json
 import os
 import pandas as pd
 
-gctypes = os.listdir("/home/student1/streamingGc/gclogs/run6_withMultiExec/")
+gctypes = os.listdir("/home/azureuser/streamingGc/Capstone/gclogs/run6_withMultiExec/")
 
 latency={}
 for gc in gctypes:
-    params = os.listdir("/home/student1/streamingGc/gclogs/run6_withMultiExec"+"/"+gc)
+    params = os.listdir("/home/azureuser/streamingGc/Capstone/gclogs/run6_withMultiExec"+"/"+gc)
     for param in params:
         
-        with open("/home/student1/streamingGc/gclogs/run6_withMultiExec/" + gc + "/" + param +"/summary10.json","r") as jsonFile:
+        with open("/home/azureuser/streamingGc/Capstone/gclogs/run6_withMultiExec/" + gc + "/" + param +"/summary10.json","r") as jsonFile:
             f = json.load(jsonFile)
         completeLatency = f["topologyStats"][0]["completeLatency"]
         if('completeLatency' not in latency):
@@ -51,7 +51,7 @@ df= pd.DataFrame.from_dict(latency, columns=["param_name",
 '''
 df= pd.DataFrame.from_dict(latency, orient='index')
 
-df.to_csv("/home/student1/streamingGc/latency_table_withMultiExec.csv")
+df.to_csv("/home/azureuser/streamingGc/Capstone/latency_table_withMultiExec.csv")
 
 
 
